@@ -24,7 +24,8 @@
     "tymfrontiers-cdn/php-mysql-database" : ">=0.1@stable",
     "tymfrontiers-cdn/php-pagination" : ">=0.1@stable",
     "tymfrontiers-cdn/php-mysql-database-object" : ">=0.1@stable",
-    "tymfrontiers-cdn/php-instance-error" : ">=0.1@stable"
+    "tymfrontiers-cdn/php-instance-error" : ">=0.1@stable",
+    "tymfrontiers-cdn/php-validator" : ">=0.1@stable"
   },
   "require-dev": {},
   "autoload": {

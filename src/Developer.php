@@ -1,7 +1,8 @@
 <?php
 namespace TymFrontiers\API;
 use \TymFrontiers\MultiForm,
-    TymFrontiers\InstanceError;
+    \TymFrontiers\InstanceError,
+    \TymFrontiers\Validator;
 
 class Developer{
   use \TymFrontiers\Helper\MySQLDatabaseObject,
@@ -29,7 +30,7 @@ class Developer{
     if( \is_array($developer) ){
       $this->_createNew($developer);
     }else{
-      if( !empty($developer) ) $this->_objtize($developer);
+      if( !empty($developer) && (new Validator)->username($developer,["developer","username",5,12,[],'UPPER',['.']]) ) $this->_objtize($developer);
     }
   }
 
