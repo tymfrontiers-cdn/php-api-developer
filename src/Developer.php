@@ -100,7 +100,7 @@ class Developer{
         throw new \Exception("Required defination(s)[MYSQL_BASE_DB, MYSQL_SERVER, MYSQL_USER_USERNAME, MYSQL_USER_PASS] not [correctly] defined.", 1);
       }
       // check if guest is logged in
-      $_GLOBAL['database'] = new \TymFrontiers\MySQLDatabase(MYSQL_SERVER,MYSQL_DEVELOPER_USERNAME,MYSQL_DEVELOPER_PASS,self::$_db_name);
+      $GLOBALS['database'] = new \TymFrontiers\MySQLDatabase(MYSQL_SERVER,MYSQL_DEVELOPER_USERNAME,MYSQL_DEVELOPER_PASS,self::$_db_name);
     }
   }
 
