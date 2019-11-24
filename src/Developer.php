@@ -11,6 +11,8 @@ class Developer{
   protected static $_primary_key = 'user';
   protected static $_db_name = MYSQL_DEV_DB;
   protected static $_table_name = "developer";
+  protected static $_prop_type = [];
+  protected static $_prop_size = [];
   protected static $_db_fields = [
     "user",
     "status",
